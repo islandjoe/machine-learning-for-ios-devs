@@ -12,6 +12,8 @@ class ViewController: UIViewController {
   
   @IBAction func selectImageSource(_ sender: Any) {
     
+    let imagePicker = UIImagePickerController()
+    imagePicker.delegate = self
   }
   
   @IBAction func checkAnimal(_ sender: Any) {
@@ -23,5 +25,16 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
+}
 
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+  
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    
+  }
+  
+  func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    picker.dismiss(animated: true)
+  }
+  
 }
