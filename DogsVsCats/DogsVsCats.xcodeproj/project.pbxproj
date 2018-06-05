@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4D391920C6CA8F00588A7B /* CatDogClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D391820C6CA8F00588A7B /* CatDogClassifier.mlmodel */; };
+		0A4D391B20C6CB7600588A7B /* DogCatDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D391A20C6CB7600588A7B /* DogCatDetector.swift */; };
 		528CE761200F9CEB00DB8826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE760200F9CEB00DB8826 /* AppDelegate.swift */; };
 		528CE763200F9CEB00DB8826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE762200F9CEB00DB8826 /* ViewController.swift */; };
 		528CE766200F9CEB00DB8826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528CE764200F9CEB00DB8826 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4D391820C6CA8F00588A7B /* CatDogClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatDogClassifier.mlmodel; sourceTree = "<group>"; };
+		0A4D391A20C6CB7600588A7B /* DogCatDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCatDetector.swift; sourceTree = "<group>"; };
 		528CE75D200F9CEB00DB8826 /* DogsVsCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogsVsCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528CE760200F9CEB00DB8826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528CE762200F9CEB00DB8826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +58,14 @@
 		528CE75F200F9CEB00DB8826 /* DogsVsCats */ = {
 			isa = PBXGroup;
 			children = (
+				0A4D391820C6CA8F00588A7B /* CatDogClassifier.mlmodel */,
 				528CE760200F9CEB00DB8826 /* AppDelegate.swift */,
 				528CE762200F9CEB00DB8826 /* ViewController.swift */,
 				528CE764200F9CEB00DB8826 /* Main.storyboard */,
 				528CE767200F9CEB00DB8826 /* Assets.xcassets */,
 				528CE769200F9CEB00DB8826 /* LaunchScreen.storyboard */,
 				528CE76C200F9CEB00DB8826 /* Info.plist */,
+				0A4D391A20C6CB7600588A7B /* DogCatDetector.swift */,
 			);
 			path = DogsVsCats;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				528CE763200F9CEB00DB8826 /* ViewController.swift in Sources */,
+				0A4D391920C6CA8F00588A7B /* CatDogClassifier.mlmodel in Sources */,
 				528CE761200F9CEB00DB8826 /* AppDelegate.swift in Sources */,
+				0A4D391B20C6CB7600588A7B /* DogCatDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
