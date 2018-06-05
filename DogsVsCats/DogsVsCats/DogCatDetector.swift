@@ -10,9 +10,10 @@ class DogCatDetector {
     let image = imageView.image!
     let value = UInt32(image.imageOrientation.rawValue)
     let imgOrientation = CGImagePropertyOrientation(rawValue: value)!
-    let requestHandler = VNImageRequestHandler(cgImage: image.cgImage!,
-                                               orientation: imgOrientation,
-                                               options: [:])
+    let requestHandler = VNImageRequestHandler(
+          cgImage: image.cgImage!,
+             orientation: imgOrientation,
+                options: [:])
     
     guard let model = try? VNCoreMLModel(for: CatDogClassifier().model) else {
       print("Couldn't load model"); return
@@ -27,8 +28,8 @@ class DogCatDetector {
       
       let classifications = observations
         .compactMap { $0 as? VNClassificationObservation }
-        .filter { $0.confidence > 0.9 }
-        .map { $0.identifier }
+          .filter { $0.confidence > 0.9 }
+            .map { $0.identifier }
       
       completion( classifications )
     }
