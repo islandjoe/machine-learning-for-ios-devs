@@ -32,7 +32,17 @@ class ViewController: UIViewController {
   }
   
   @IBAction func checkAnimal(_ sender: Any) {
-    
+    DogCatDetector.beginDetection(imageView) {
+      (results) in
+      
+      guard let awww = results.first else {
+        print("Could not detect"); return
+      }
+      
+      DispatchQueue.main.async {
+        self.classificationLabel.text = "It's a \(awww)"
+      }
+    }
   }
   
   override func didReceiveMemoryWarning() {
